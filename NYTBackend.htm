@@ -15,7 +15,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     // Adding click event listen listener to all buttons
-    $("button").on("click", function() {
+    $("button").on("click", function()
+    {
       // Grabbing and storing the data-animal property value from the button
       var animal = $(this).attr("data-animal");
 
@@ -32,7 +33,8 @@
         method: "GET"
       })
         // After data comes back from the request
-        .then(function(response) {
+        .then(function(response)
+        {
           console.log(queryURL);
 
           console.log(response);
@@ -40,6 +42,7 @@
           var results = response.data;
 
           // Looping through each result item
+          /*
           for (var i = 0; i < results.length; i++) {
 
             // Creating and storing a div tag
@@ -59,10 +62,11 @@
 
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
             $("#gifs-appear-here").prepend(animalDiv);
+          
           }
-        });
+          */
+        }//);
     });
   </script>
 </body>
-
 </html>
