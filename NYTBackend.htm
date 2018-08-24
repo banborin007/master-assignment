@@ -42,8 +42,11 @@
           console.log("queryURL: " + queryURL);
 
           console.log("response: " + response);
+          console.log(response);
           // storing the data from the AJAX request in the results variable
-          let results = response.data;
+          //let results = response.data;
+          console.log("response.q: ");
+          console.log("response.docs")//: (response.q");
           let stringyResults = JSON.stringify(response);
           
           //console.log("q: " + queryURL.param.q); //response.param.q.val);
